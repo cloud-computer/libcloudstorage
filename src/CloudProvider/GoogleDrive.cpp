@@ -417,7 +417,8 @@ void GoogleDrive::Auth::initialize(IHttp* http, IHttpServerFactory* factory) {
   cloudstorage::Auth::initialize(http, factory);
   if (client_id().empty()) {
     set_client_id(
-        "593888582275-paasgsjjgbqe9vdeqocj7vak5aa3m345.apps.googleusercontent.com");
+        "593888582275-paasgsjjgbqe9vdeqocj7vak5aa3m345.apps.googleusercontent."
+        "com");
     set_client_secret("XV1itB6E-OJWfvR4mRZhineq");
   }
 }
