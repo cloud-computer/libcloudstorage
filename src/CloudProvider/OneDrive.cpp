@@ -307,8 +307,8 @@ IItem::List OneDrive::listDirectoryResponse(
 void OneDrive::Auth::initialize(IHttp* http, IHttpServerFactory* factory) {
   cloudstorage::Auth::initialize(http, factory);
   if (client_id().empty()) {
-    set_client_id("56a1d60f-ea71-40e9-a489-b87fba12a23e");
-    set_client_secret("zJRAsd0o4E9c33q4OLc7OhY");
+    set_client_id("19ed56de-8b77-4689-87fc-8c10e729e852");
+    set_client_secret("Mr14*tat/eOyHeA2:GU2.0nxg?VrQJ/u");
   }
 }
 
