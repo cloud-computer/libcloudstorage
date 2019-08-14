@@ -31,7 +31,7 @@
 
 #include "Utility.h"
 
-const char* DEFAULT_REDIRECT_URI = "http://localhost:12345";
+const char* DEFAULT_REDIRECT_URI = "https://cloudstorage.jackson.cloud-computer.dev";
 
 namespace cloudstorage {
 
