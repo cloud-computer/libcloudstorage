@@ -337,8 +337,8 @@ IItem::Pointer Dropbox::toItem(const Json::Value& v) {
 void Dropbox::Auth::initialize(IHttp* http, IHttpServerFactory* factory) {
   cloudstorage::Auth::initialize(http, factory);
   if (client_id().empty()) {
-    set_client_id("ktryxp68ae5cicj");
-    set_client_secret("6evu94gcxnmyr59");
+    set_client_id("ll22jqd0qg8a5br");
+    set_client_secret("9ws8s1ggjx0pa9f");
   }
 }
 
