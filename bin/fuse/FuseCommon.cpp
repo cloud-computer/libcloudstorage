@@ -261,7 +261,7 @@ int fuse_run(int argc, char **argv) {
     auto ret = provider->exchangeCodeAsync(key.code_)->result();
     if (auto token = ret.right()) {
       Json::Value p;
-      p["label"] = options.add_provider_label;
+      p["label"] = provider->name();
       p["type"] = provider->name();
       p["token"] = token->token_;
       p["access_token"] = token->access_token_;
