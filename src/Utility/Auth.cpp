@@ -31,7 +31,7 @@
 
 #include "Utility.h"
 
-const char* DEFAULT_REDIRECT_URI = "https://cloudstorage.jackson.cloud-computer.dev";
+char* DEFAULT_REDIRECT_URI = std::getenv("CLOUD_COMPUTER_REDIRECT_URI");
 
 namespace cloudstorage {
 

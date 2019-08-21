@@ -237,7 +237,7 @@ int fuse_run(int argc, char **argv) {
     auto storage = ICloudStorage::create();
     for (auto &&p : storage->providers()) {
       ICloudProvider::InitData init_data;
-      init_data.hints_["state"] = p;
+      init_data.hints_["state"] = p + "." + std::getenv("CLOUD_COMPUTER_HOST_ID");
       init_data.permission_ = ICloudProvider::Permission::ReadWrite;
       std::cerr << "\n";
       std::cerr
