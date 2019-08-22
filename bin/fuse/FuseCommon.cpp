@@ -192,7 +192,7 @@ int fuse_run(int argc, char **argv) {
     return 1;
   if (!options.config_file)
     options.config_file = strdup(
-        (cloudstorage::util::home_directory() + "/.libcloudstorage-fuse.json")
+        (cloudstorage::util::home_directory() + "/.config/cloudstorage/libcloudstorage-fuse.json")
             .c_str());
   pointer<fuse_cmdline_opts> opts(new fuse_cmdline_opts{},
                                   [](fuse_cmdline_opts *opts) {
@@ -310,7 +310,6 @@ int fuse_run(int argc, char **argv) {
 #endif
 #endif
 
-  std::ofstream(options.config_file) << json;
   return ret;
 }
 
